@@ -2,15 +2,19 @@
 	"name": "ReactApp",
 	"version": "0.0.1",
 	"private": true,
+	"homepage": "https://ng-model.github.io/react-native"
 	"scripts": {
 		"start": "node node_modules/react-native/local-cli/cli.js start",
-		"test": "jest"
+		"test": "jest",
+		"predeploy": "npm run build",
+    		"deploy": "gh-pages -d build" 
 	},
 	"dependencies": {
 		"react": "16.0.0",
 		"react-native": "0.50.3"
 	},
 	"devDependencies": {
+		"gh-pages": "^1.0.0",
 		"babel-jest": "21.2.0",
 		"babel-preset-react-native": "4.0.0",
 		"jest": "21.2.1",
